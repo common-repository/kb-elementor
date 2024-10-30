@@ -1,0 +1,35 @@
+.ke-toc-list-none ul{
+    list-style: none;
+}
+.ke-toc-list-roman ul{
+    list-style: lower-roman;
+}
+
+.ke-toc-list-decimal ul{
+    list-style: decimal;
+}
+
+.ke-toc-list-float ul{
+    counter-reset:item;
+}
+
+.ke-toc-list-float li {
+    display:block;
+}
+
+.ke-toc-list-float li:before{
+    content:counters(item, ".") " ";
+    counter-increment:item;
+}
+
+.ke-hide-button::after{
+    content: '[hide]';
+    font-style: normal;
+    cursor: pointer
+}
+
+.ke-show-button::after{
+    content: '[show]';
+    font-style: normal;
+    cursor: pointer
+}
